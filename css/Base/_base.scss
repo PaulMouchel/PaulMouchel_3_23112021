@@ -15,10 +15,28 @@ h1,h2 {
 
 ul {
     padding-inline-start: 0px;
+    li {
+        list-style: none;
+    }
 }
 
-ul li {
+ol {
     list-style: none;
+    counter-reset: item;
+    li {
+        counter-increment: item;
+        margin-bottom: 5px;
+        &:before {
+            margin-right: 10px;
+            content: counter(item);
+            background: $color-primary;
+            border-radius: 50%;
+            color: #fff;
+            width: 1.2rem;
+            text-align: center;
+            display: inline-block;
+          }
+    }
 }
 
 button {
@@ -27,4 +45,5 @@ button {
     background: linear-gradient($color-secondary, $color-primary);
     border: none;
     padding: 1rem;
+    box-shadow: 0px 3px 8px 2px #bbb;
 }
