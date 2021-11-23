@@ -9,6 +9,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2 {
     font-family: 'Shrikhand', cursive;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    border-radius: 99rem;
+    color: #fff;
+    background: linear-gradient($color-secondary, $color-primary);
+    border: none;
+    padding: 1rem;
 }

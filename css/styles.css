@@ -8,6 +8,28 @@
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: "Shrikhand", cursive;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border-radius: 99rem;
+  color: #fff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  padding: 1rem;
+}
+
+footer {
+  background: #353535;
+  color: #FFF;
 }/*# sourceMappingURL=styles.css.map */
