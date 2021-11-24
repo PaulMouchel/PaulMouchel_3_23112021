@@ -12,6 +12,30 @@ h1, h2 {
   font-family: "Shrikhand", cursive;
 }
 
+h1, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 1rem;
+}
+
 ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
@@ -46,6 +70,31 @@ button {
   border: none;
   padding: 1rem;
   box-shadow: 0px 3px 8px 2px #bbb;
+}
+
+.place {
+  text-align: center;
+  background: #eaeaea;
+  padding: 1rem 0;
+}
+
+.call-to-action {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+.call-to-action h3 {
+  padding: 0 1rem;
+  margin-top: 0;
+  margin-bottom: 0.65rem;
+}
+.call-to-action p {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: gray;
+}
+.call-to-action button {
+  margin: 0.65rem 0;
 }
 
 .restaurant-card {
