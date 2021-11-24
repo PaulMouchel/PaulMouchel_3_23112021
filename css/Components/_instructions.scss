@@ -1,0 +1,40 @@
+#instructions {
+    margin-bottom: 2.5rem;
+    ol {
+        list-style: none;
+        counter-reset: item;
+        padding-left: 1rem;
+        li {
+            counter-increment: item;
+            margin-bottom: 5px;
+            padding: 1.65rem;
+            background: rgb(246,246,246);
+            border-radius: 1rem;
+            position:relative;
+            margin: 1rem 0;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 5px 10px 2px rgb(230, 230, 230);
+            .fas {
+                color: gray;
+                font-size: 1.1rem;
+                margin-right: 1.75rem;
+            }
+            &:before {
+                margin-right: 10px;
+                content: counter(item);
+                background: $color-primary;
+                border-radius: 50%;
+                color: #fff;
+                width: 1.6rem;
+                padding: .34rem;
+                font-size: .8rem;
+                text-align: center;
+                display: inline-block;
+                position:absolute;
+                left:-1rem;
+              }
+        }
+    }
+}

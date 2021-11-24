@@ -33,8 +33,14 @@ h4 {
     font-size: 1.5rem;
 }
 
+h5 {
+    font-size: 1.1rem;
+    margin: .5rem 0;
+}
+
 section {
     padding: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 ul {
@@ -44,24 +50,7 @@ ul {
     }
 }
 
-ol {
-    list-style: none;
-    counter-reset: item;
-    li {
-        counter-increment: item;
-        margin-bottom: 5px;
-        &:before {
-            margin-right: 10px;
-            content: counter(item);
-            background: $color-primary;
-            border-radius: 50%;
-            color: #fff;
-            width: 1.2rem;
-            text-align: center;
-            display: inline-block;
-          }
-    }
-}
+
 
 button {
     border-radius: 99rem;

@@ -4,7 +4,11 @@
 @import "./Base/base";
 @import "./Components/place-band";
 @import "./Components/call-to-action";
+@import "./Components/instructions";
 @import "./Components/restaurant-card";
 @import "./layouts/header"; 
 @import "./layouts/footer";
 
+#restaurants-list {
+    background: rgb(246,246,246)
+}

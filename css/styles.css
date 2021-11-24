@@ -32,8 +32,14 @@ h4 {
   font-size: 1.5rem;
 }
 
+h5 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
 section {
   padding: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 ul {
@@ -42,25 +48,6 @@ ul {
 }
 ul li {
   list-style: none;
-}
-
-ol {
-  list-style: none;
-  counter-reset: item;
-}
-ol li {
-  counter-increment: item;
-  margin-bottom: 5px;
-}
-ol li:before {
-  margin-right: 10px;
-  content: counter(item);
-  background: #9356DC;
-  border-radius: 50%;
-  color: #fff;
-  width: 1.2rem;
-  text-align: center;
-  display: inline-block;
 }
 
 button {
@@ -78,40 +65,110 @@ button {
   padding: 1rem 0;
 }
 
-.call-to-action {
+#call-to-action {
   background: #f6f6f6;
   text-align: center;
   padding: 2.5rem 2rem;
+  margin-bottom: 0;
 }
-.call-to-action h3 {
+#call-to-action h3 {
   padding: 0 1rem;
   margin-top: 0;
   margin-bottom: 0.65rem;
 }
-.call-to-action p {
+#call-to-action p {
   margin-top: 0;
   font-size: 1.1rem;
   color: gray;
 }
-.call-to-action button {
+#call-to-action button {
   margin: 0.65rem 0;
+}
+
+#instructions {
+  margin-bottom: 2.5rem;
+}
+#instructions ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 1rem;
+}
+#instructions ol li {
+  counter-increment: item;
+  margin-bottom: 5px;
+  padding: 1.65rem;
+  background: #f6f6f6;
+  border-radius: 1rem;
+  position: relative;
+  margin: 1rem 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 10px 2px #e6e6e6;
+}
+#instructions ol li .fas {
+  color: gray;
+  font-size: 1.1rem;
+  margin-right: 1.75rem;
+}
+#instructions ol li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: #9356DC;
+  border-radius: 50%;
+  color: #fff;
+  width: 1.6rem;
+  padding: 0.34rem;
+  font-size: 0.8rem;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: -1rem;
 }
 
 .restaurant-card {
   border-radius: 2rem;
-  max-height: 200px;
+  max-height: 250px;
   overflow: hidden;
+  box-shadow: 0 5px 10px 2px #e6e6e6;
+  margin-bottom: 1rem;
 }
 .restaurant-card__image-wrapper {
   max-height: 150px;
-  margin-bottom: 10px;
   display: flex;
+  position: relative;
 }
 .restaurant-card__image-wrapper img {
   min-width: 100%;
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.restaurant-card__image-wrapper .new {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #99E2D0;
+  color: #278870;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+  font-weight: 600;
+  border-radius: 0.2rem;
+}
+.restaurant-card__infos {
+  position: relative;
+  padding: 0.75rem;
+}
+.restaurant-card__infos p {
+  margin: 0;
+}
+.restaurant-card__infos .fa-heart {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -129,4 +186,8 @@ footer li {
 footer li i {
   font-size: 0.8rem;
   width: 1.5rem;
+}
+
+#restaurants-list {
+  background: #f6f6f6;
 }/*# sourceMappingURL=styles.css.map */

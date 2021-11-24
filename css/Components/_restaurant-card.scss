@@ -1,15 +1,42 @@
 .restaurant-card {
     border-radius: 2rem;
-    max-height: 200px;
+    max-height: 250px;
     overflow: hidden;
+    box-shadow: 0 5px 10px 2px rgb(230, 230, 230);
+    margin-bottom: 1rem;
     &__image-wrapper {
         max-height: 150px;
-        margin-bottom: 10px;
         display: flex;
+        position:relative;
         img {
             min-width: 100%;
             min-height: 100%;
             object-fit: cover;
+            object-position: center;
+        }
+        .new {
+            position:absolute;
+            top: 1rem;
+            right: 1rem;
+            background: $color-tertiary;
+            color: darken($color: $color-tertiary, $amount: 40%);
+            font-size: .9rem;
+            padding: .4rem .6rem;
+            font-weight: 600;
+            border-radius: .2rem;
+        }
+    }
+    &__infos {
+        position: relative;
+        padding: .75rem;
+        p {
+            margin: 0;
+        }
+        .fa-heart {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 1.5rem;
         }
     }
 }
