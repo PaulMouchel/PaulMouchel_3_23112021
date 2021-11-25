@@ -213,6 +213,10 @@ button {
 .dish-card:hover .dish-card__inside {
   width: calc(100% - 3.5rem);
 }
+.dish-card:hover .dish-card__aside i {
+  transform: rotate(360deg);
+  transition: transform 0.5s;
+}
 .dish-card__inside {
   display: inline-block;
   position: relative;
@@ -245,6 +249,9 @@ button {
   align-items: center;
   color: #fff;
   font-size: 1.2rem;
+}
+.dish-card__aside i {
+  transition: none;
 }
 
 header {
