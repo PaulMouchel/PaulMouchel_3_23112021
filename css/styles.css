@@ -62,6 +62,11 @@ ul li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button {
   border-radius: 99rem;
   color: #fff;
@@ -197,6 +202,22 @@ button {
      object-position: center;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header a {
+  display: block;
+  position: absolute;
+  padding: 0.5rem;
+  left: 1rem;
+  cursor: pointer;
+}
+header a .fa-arrow-left {
+  font-size: 1.4rem;
+}
 #menu {
   position: relative;
   top: -2rem;

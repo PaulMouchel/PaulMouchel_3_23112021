@@ -1,5 +1,20 @@
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    a {
+        display: block;
+        position:absolute;
+        padding: .5rem;
+        left: 1rem;
+        cursor: pointer;
+        .fa-arrow-left {
+            font-size: 1.4rem;
+        }
+    }
+    
     h1 {
-        
+
     }
 }
