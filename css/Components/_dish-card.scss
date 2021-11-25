@@ -1,3 +1,45 @@
 .dish-card {
-    
+    position: relative;
+    box-shadow: 0 5px 10px 2px rgb(230, 230, 230);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    &:hover .dish-card__inside{
+        width: calc(100% - 3.5rem);
+    }
+    &__inside {
+        display: inline-block;
+        position: relative;
+        padding: .7rem;
+        width: 100%; 
+        transition: width .5s;
+    }
+    &__name {
+        font-size: 1.1rem;
+    }
+    &__details {
+        margin: .3rem 0;
+        font-size: .9rem;
+    }
+    &__price {
+        position: absolute;
+        right: 1rem;
+        bottom:1rem;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    &__aside {
+        position: absolute;
+        top:0;
+        bottom: 0;
+        width: 3.5rem;
+        background-color: $color-tertiary;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.2rem;
+    }
 }
+

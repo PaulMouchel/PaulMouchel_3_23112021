@@ -202,6 +202,51 @@ button {
      object-position: center;
 }
 
+.dish-card {
+  position: relative;
+  box-shadow: 0 5px 10px 2px #e6e6e6;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+.dish-card:hover .dish-card__inside {
+  width: calc(100% - 3.5rem);
+}
+.dish-card__inside {
+  display: inline-block;
+  position: relative;
+  padding: 0.7rem;
+  width: 100%;
+  transition: width 0.5s;
+}
+.dish-card__name {
+  font-size: 1.1rem;
+}
+.dish-card__details {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+.dish-card__price {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.dish-card__aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3.5rem;
+  background-color: #99E2D0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -218,6 +263,7 @@ header a {
 header a .fa-arrow-left {
   font-size: 1.4rem;
 }
+
 #menu {
   position: relative;
   top: -2rem;
@@ -233,6 +279,16 @@ header a .fa-arrow-left {
 }
 #menu #restaurant-name .fa-heart {
   font-size: 1.8rem;
+}
+#menu section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#menu button {
+  display: block;
+  margin: auto;
+  width: 12rem;
+  margin-top: 3rem;
 }
 
 footer {
