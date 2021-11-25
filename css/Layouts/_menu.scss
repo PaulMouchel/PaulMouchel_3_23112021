@@ -1,0 +1,16 @@
+#menu {
+    position: relative;
+    top: -2rem;
+    background: rgb(246,246,246);
+    border-radius: 2.5rem 2.5rem 0 0;
+    padding: 2rem 0;
+    #restaurant-name {
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .fa-heart {
+            font-size: 1.8rem;
+        }
+    }
+}

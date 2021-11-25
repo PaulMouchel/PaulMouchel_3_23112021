@@ -21,7 +21,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
 }
 
 h3 {
@@ -34,6 +36,16 @@ h4 {
 
 h5 {
   font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 2.5rem;
+  border-bottom: solid 3px #99E2D0;
+  text-transform: uppercase;
+  padding: 0.2rem 0;
   margin: 0.5rem 0;
 }
 
@@ -169,6 +181,37 @@ button {
   right: 1rem;
   top: 1rem;
   font-size: 1.5rem;
+}
+
+#restaurant-image {
+  max-height: 250px;
+  display: flex;
+  position: relative;
+}
+#restaurant-image img {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#menu {
+  position: relative;
+  top: -2rem;
+  background: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2rem 0;
+}
+#menu #restaurant-name {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu #restaurant-name .fa-heart {
+  font-size: 1.8rem;
 }
 
 footer {

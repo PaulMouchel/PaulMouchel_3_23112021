@@ -1,0 +1,11 @@
+#restaurant-image {
+    max-height: 250px;
+    display: flex;
+    position:relative;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
