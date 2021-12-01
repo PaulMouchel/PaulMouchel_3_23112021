@@ -51,7 +51,7 @@ h6 {
 
 section {
   padding: 1rem;
-  margin-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
 }
 
 ul {
@@ -102,9 +102,6 @@ button {
   margin: 0.65rem 0;
 }
 
-#instructions {
-  margin-bottom: 2.5rem;
-}
 #instructions ol {
   list-style: none;
   counter-reset: item;
@@ -209,6 +206,7 @@ button {
   overflow: hidden;
   margin-bottom: 1rem;
   background-color: #fff;
+  width: 100%;
 }
 .dish-card:hover .dish-card__inside {
   width: calc(100% - 3.5rem);
@@ -271,12 +269,36 @@ header a .fa-arrow-left {
   font-size: 1.4rem;
 }
 
+#restaurants-list {
+  background: #f6f6f6;
+}
+
 #menu {
   position: relative;
   top: -2rem;
   background: #f6f6f6;
   border-radius: 2.5rem 2.5rem 0 0;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
+  margin-bottom: -2rem;
+}
+#menu__dishes {
+  display: flex;
+  flex-wrap: wrap;
+}
+#menu__dishes section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+@media screen and (min-width: 760px) {
+  #menu__dishes section {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1180px) {
+  #menu__dishes section {
+    width: 33.3%;
+  }
 }
 #menu #restaurant-name {
   padding: 0 1rem;
@@ -286,10 +308,6 @@ header a .fa-arrow-left {
 }
 #menu #restaurant-name .fa-heart {
   font-size: 1.8rem;
-}
-#menu section {
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 #menu button {
   display: block;
@@ -313,8 +331,4 @@ footer li {
 footer li i {
   font-size: 0.8rem;
   width: 1.5rem;
-}
-
-#restaurants-list {
-  background: #f6f6f6;
 }/*# sourceMappingURL=styles.css.map */

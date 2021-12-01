@@ -3,7 +3,23 @@
     top: -2rem;
     background: rgb(246,246,246);
     border-radius: 2.5rem 2.5rem 0 0;
-    padding: 2rem 0;
+    padding: 2rem 0 4rem;
+    margin-bottom: -2rem;
+    &__dishes {
+        display: flex;
+        flex-wrap: wrap;
+        section {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            width: 100%;
+            @include tab {
+                width: 50%;
+            }
+            @include desktop {
+                width: 33.3%;
+            }
+        }
+    }
     #restaurant-name {
         padding: 0 1rem;
         display: flex;
@@ -13,10 +29,7 @@
             font-size: 1.8rem;
         }
     }
-    section {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
+    
     button {
         display: block;
         margin: auto;
@@ -24,3 +37,4 @@
         margin-top: 3rem;
     }
 }
+
