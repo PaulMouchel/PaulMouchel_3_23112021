@@ -1,3 +1,20 @@
 #restaurants-list {
-    background: rgb(246,246,246)
+    background: rgb(246,246,246);
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:auto;
+        max-width: 1400px;
+        a {
+            width: 100%;
+            @include tab {
+                width: 48%;
+            }
+            @include desktop {
+                width: 24%;
+            }
+        }
+    }
 }
