@@ -33,7 +33,7 @@ h3 {
 h4 {
   font-size: 1.5rem;
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 760px) {
   h4 {
     text-align: center;
   }
@@ -111,6 +111,16 @@ button {
   list-style: none;
   counter-reset: item;
   padding-left: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+@media screen and (min-width: 1180px) {
+  #instructions ol {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1920px;
+  }
 }
 #instructions ol li {
   counter-increment: item;
@@ -125,10 +135,22 @@ button {
   align-items: center;
   box-shadow: 0 5px 10px 2px #e6e6e6;
 }
+@media screen and (min-width: 1180px) {
+  #instructions ol li {
+    flex-direction: column;
+  }
+}
 #instructions ol li .fas {
   color: gray;
   font-size: 1.1rem;
   margin-right: 1.75rem;
+}
+@media screen and (min-width: 1180px) {
+  #instructions ol li .fas {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
 }
 #instructions ol li:before {
   margin-right: 10px;
@@ -143,6 +165,12 @@ button {
   display: inline-block;
   position: absolute;
   left: -1rem;
+}
+@media screen and (min-width: 1180px) {
+  #instructions ol li:before {
+    left: 1rem;
+    top: 1rem;
+  }
 }
 
 .restaurant-card {
