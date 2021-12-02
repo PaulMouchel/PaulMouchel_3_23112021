@@ -13,6 +13,7 @@
     h1 {
         color: #FFF;
         font-size: 4rem;
+        animation: title 1.5s ease-in-out forwards;
     }
     p {
         color: #FFF;
@@ -49,5 +50,19 @@
   
     to {
         transform: scaleX(1)
+    }
+}
+
+@keyframes title {
+    0% {
+      transform: translateX(-100vw)  scale(1.5, 0.7);
+    }
+  
+    50% {
+        transform: translateX(20px) scale(1,1);
+    }
+
+    100% {
+        transform: translateX(100vw) scale(1.5, 0.7);
     }
 }
