@@ -503,6 +503,8 @@ header a .fa-arrow-left {
 #menu__dishes {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
 }
 #menu__dishes section {
   margin-bottom: 0;

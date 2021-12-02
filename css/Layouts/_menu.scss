@@ -11,6 +11,8 @@
     &__dishes {
         display: flex;
         flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
         section {
             margin-bottom: 0;
             padding-bottom: 0;
