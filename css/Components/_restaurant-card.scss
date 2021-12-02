@@ -38,8 +38,13 @@
             right: 1rem;
             top: 1rem;
             font-size: 1.5rem;
-            
-            
+            color: white;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+            transition: color ease-in-out .4s;
+            &:hover {
+                color: $color-secondary;
+            }
         }
     }
 }
