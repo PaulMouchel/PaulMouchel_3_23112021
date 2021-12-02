@@ -6,6 +6,13 @@
     margin-bottom: 1rem;
     background-color: #fff;
     width: 100%;
+    animation: appear 1s ease-in-out forwards;
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}n){
+            animation-delay: 200 * $i + ms;
+        }
+    }
+    opacity: 0;
     &:hover .dish-card__inside{
         width: calc(100% - 3.5rem);
     }
@@ -22,10 +29,19 @@
     }
     &__name {
         font-size: 1.1rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+        display: block;
     }
     &__details {
         margin: .3rem 0;
         font-size: .9rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-right: 2rem;
     }
     &__price {
         position: absolute;
@@ -51,3 +67,14 @@
     }
 }
 
+@keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(1rem)
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }

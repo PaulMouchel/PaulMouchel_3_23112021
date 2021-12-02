@@ -79,6 +79,12 @@ button {
   padding: 1rem;
   box-shadow: 0px 3px 8px 2px #bbb;
   cursor: pointer;
+  transition: opacity 0.4s, box-shadow 0.4s, background-color 0.4s;
+  opacity: 1;
+}
+button:hover {
+  opacity: 0.9;
+  box-shadow: 0px 3px 8px 2px #999;
 }
 
 .place {
@@ -241,6 +247,25 @@ button {
   margin-bottom: 1rem;
   background-color: #fff;
   width: 100%;
+  -webkit-animation: appear 1s ease-in-out forwards;
+          animation: appear 1s ease-in-out forwards;
+  opacity: 0;
+}
+.dish-card:nth-child(1n) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.dish-card:nth-child(2n) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.dish-card:nth-child(3n) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.dish-card:nth-child(4n) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 .dish-card:hover .dish-card__inside {
   width: calc(100% - 3.5rem);
@@ -258,10 +283,19 @@ button {
 }
 .dish-card__name {
   font-size: 1.1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  display: block;
 }
 .dish-card__details {
   margin: 0.3rem 0;
   font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 2rem;
 }
 .dish-card__price {
   position: absolute;
@@ -286,6 +320,27 @@ button {
   transition: none;
 }
 
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 header {
   display: flex;
   align-items: center;
