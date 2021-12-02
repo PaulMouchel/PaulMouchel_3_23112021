@@ -259,6 +259,18 @@ button:hover {
   margin-bottom: 1rem;
   width: 100%;
 }
+.restaurant-card--new .restaurant-card__image-wrapper::after {
+  content: "Nouveau";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #99E2D0;
+  color: #278870;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+  font-weight: 600;
+  border-radius: 0.2rem;
+}
 .restaurant-card__image-wrapper {
   max-height: 150px;
   display: flex;
@@ -271,17 +283,6 @@ button:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-.restaurant-card__image-wrapper .new {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: #99E2D0;
-  color: #278870;
-  font-size: 0.9rem;
-  padding: 0.4rem 0.6rem;
-  font-weight: 600;
-  border-radius: 0.2rem;
 }
 .restaurant-card__infos {
   position: relative;
@@ -495,13 +496,20 @@ header a .fa-arrow-left {
   }
 }
 #menu #restaurant-name {
-  padding: 0 1rem;
+  padding: 0 2rem 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #menu #restaurant-name .fa-heart {
   font-size: 1.8rem;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  transition: color ease-in-out 0.4s;
+}
+#menu #restaurant-name .fa-heart:hover {
+  color: #FF79DA;
 }
 #menu button {
   display: block;
