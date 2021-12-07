@@ -1,5 +1,10 @@
-#Bienvenue sur mon projet 3 OpenClassRooms
+# Bienvenue sur le P3 !
 
-Le lien du site en production ci-dessous :
+Bonjour. Ceci est le projet numéro 3 de la formation Développeur Web d'OpenClassRooms.
+
+
+## Production
+
+The lien en production est le suivant :
 
 https://paulmouchel.github.io/PaulMouchel_3_23112021/
