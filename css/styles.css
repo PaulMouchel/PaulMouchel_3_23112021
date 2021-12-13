@@ -236,11 +236,15 @@ button:hover {
   display: flex;
   align-items: center;
   box-shadow: 0 5px 10px 2px #e6e6e6;
+  transition: background-color 0.5s;
 }
 @media screen and (min-width: 1180px) {
   #instructions ol li {
     flex-direction: column;
   }
+}
+#instructions ol li:hover {
+  background: #f5edff;
 }
 #instructions ol li .fas {
   color: gray;
