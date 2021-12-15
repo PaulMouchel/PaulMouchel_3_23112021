@@ -246,10 +246,14 @@ button:hover {
 #instructions ol li:hover {
   background: #f5edff;
 }
+#instructions ol li:hover .fas {
+  color: #9356DC;
+}
 #instructions ol li .fas {
   color: gray;
   font-size: 1.1rem;
   margin-right: 1.75rem;
+  transition: color 0.4s;
 }
 @media screen and (min-width: 1180px) {
   #instructions ol li .fas {
